@@ -41,4 +41,19 @@ URL: http://127.0.0.1:8000/api/v1/artist/`id`
 Method: DELETE
 URL: http://127.0.0.1:8000/api/v1/artist/`id`
 
+## Dummy Data
+
+To create dummy data execute the following command.
+
+```bash
+$ php artisan tinker
+
+// Create dummy user
+// This will create 50 dummy user
+factory(App\User::class,50)->create(); 
+
+// Create dummy artist entry
+factory(App\Api\Artist::class,20)->create();
+```
+
 
