@@ -1,0 +1,1 @@
+php artisan passport:keys   =>    This command generates the encryption keys Passport needs in order to generate access token.
