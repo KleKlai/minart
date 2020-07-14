@@ -30,8 +30,8 @@
             display: grid;
             justify-content: start;
             gap: 30px;
-            
-            grid-template-areas: 
+
+            grid-template-areas:
                 "left picture";
         }
 
@@ -42,13 +42,13 @@
             background-size: 34px 27px;
         }
 
-        
+
         .root {
             margin-top: 50px;
             display: grid;
             gap: 30px;
             grid-template-rows: 420px;
-            grid-template-areas: 
+            grid-template-areas:
                 "logo form"
         }
 
@@ -118,7 +118,7 @@
             top
         }
 
-        @media (max-width: 991.98px) { 
+        @media (max-width: 991.98px) {
             .picture {
                 display: none;
             }
@@ -145,10 +145,25 @@
                         <a href="/"><img src="/images/logo.png" alt="Mindanao Art Logo"></a>
                     </div>
 
+                    {{--  @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif  --}}
+
+
+
                     <form method="POST" action="{{ route('signmeup.store') }}">
                         @csrf
+                        @if(Session::has('message'))
+                            <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+                        @endif
                         <h2><a class="back" href="/"><font-awesome-icon icon="angle-left" /></a> Register</h2>
-                        <input type="text" placeholder="Fullname" name="fullname">
+                        <input type="text" placeholder="Fullname" name="name">
                         <input type="email" placeholder="Email" name="email">
                         <select id="gender" name="gender">
                             <option value="0">Gender</option>
@@ -156,7 +171,7 @@
                             <option value="female">Female</option>
                         </select>
                         <input type="date" placeholder="Birthday" name="birthday">
-                        <input type="text" placeholder="What are you? (Doctor, Lawyer, etc)" name="proffession">
+                        <input type="text" placeholder="What are you? (Doctor, Lawyer, etc)" name="profession">
                         <p>By signing up, you agreed to receive email notification relating to the Mindanao Art Fair.</p>
                         <button type="submit">SUBMIT >>></button>
                     </form>
@@ -166,7 +181,7 @@
                 <img src="/images/image1.png" alt="Image1">
             </div>
         </div>
-        
+
         <div class="container">
             <p class="footer">Copyright 2020. Mindanao Art</p>
         </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Api\Artist;
 
 class SignMeUpController extends Controller
 {
@@ -34,7 +35,21 @@ class SignMeUpController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        // dd($request);
+
+        $request->validate([
+            'name'          => 'required|string',
+            'email'         => 'required|unique:artists|email',
+            'gender'        => 'required|in:male,female',
+            'birthday'      => 'required|string',
+            'profession'    => 'required|string',
+        ]);
+
+        Artist::create($request->all());
+
+        \Session::flash('message', 'Congratulations your entry has been recorded.');
+
+        return back();
     }
 
     /**
