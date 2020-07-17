@@ -8,10 +8,10 @@
                 <div class="col-md">
                     <div class="container">
                         <div class="row row-cols-1">
-                            <div class="col">
+                            <div class="col py-3">
                                 <img src="/images/logo.png" alt="Mindanao Art Logo">
                             </div>
-                            <div class="col py-5">
+                            <div class="col">
                                 <h2>Living Art in New Landscape</h2>
                                 <countdown :time="time" :interval="100" tag="p">
                                     <template slot-scope="props">
@@ -73,7 +73,7 @@
                                     </template>
                                 </countdown>
                             </div>
-                            <div class="col  py-3">
+                            <div class="col">
                                 <a class="link" href="/signmeup">
                                     SIGN ME UP  
                                     <font-awesome-icon icon="angle-right" />
@@ -146,12 +146,7 @@
     }
 
     .small {
-        margin-top: 50px;
         display: none;
-    }
-
-    .wide {
-        margin-top: 50px;
     }
 
     .column{
@@ -219,12 +214,10 @@
         }
 
         .small {
-            margin-top: 50px;
             display: block;
         }
 
         .wide {
-            margin-top: 50px;
             display: none;
         }
     }

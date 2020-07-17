@@ -3,7 +3,7 @@
         <div id="pattern">
                 <img src="/images/spattern.png" alt="">
         </div>
-        <div class="container wide">
+        <div class="container d-none">
             <div class="row">
                 <div class="col-md">
                     <div class="container">
@@ -11,7 +11,7 @@
                             <div class="col">
                                 <img src="/images/logo.png" alt="Mindanao Art Logo">
                             </div>
-                            <div class="col py-5">
+                            <div class="col">
                                 <h2>Living Art in New Landscape</h2>
                                 <countdown :time="time" :interval="100" tag="p">
                                     <template slot-scope="props">
@@ -46,9 +46,9 @@
             </div>
         </div>
         
-        <div class="container small">
+        <div class="container d-block">
             <div class="row">
-                <div class="col-3">
+                <div class="col-4">
                     <div class="col">
                         <img src="/images/logo.png" alt="Mindanao Art Logo">
                     </div>
@@ -73,7 +73,7 @@
                                     </template>
                                 </countdown>
                             </div>
-                            <div class="col  py-3">
+                            <div class="col">
                                 <a class="link" href="/signmeup">
                                     SIGN ME UP  
                                     <font-awesome-icon icon="angle-right" />
@@ -145,14 +145,20 @@
         width: 100%;
     }
 
-    .small {
+    /* #data {
         margin-top: 50px;
-        display: none;
+        display: grid;
+        grid-template-rows: 220px 190px auto;
+        grid-template-areas: 
+            "logo picture"
+            "time picture"
+            "signup picture";
     }
 
-    .wide {
-        margin-top: 50px;
-    }
+    .logo { grid-area: logo;}
+    .time { grid-area: time;}
+    .signup { grid-area: signup;}
+    .picture { grid-area: picture; justify-self: end;} */
 
     .column{
         color: #b78032;
@@ -216,16 +222,6 @@
 
         .link {
             font-size: 20px;
-        }
-
-        .small {
-            margin-top: 50px;
-            display: block;
-        }
-
-        .wide {
-            margin-top: 50px;
-            display: none;
         }
     }
 </style>

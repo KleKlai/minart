@@ -12413,6 +12413,59 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 Vue.component(_chenfengyuan_vue_countdown__WEBPACK_IMPORTED_MODULE_0___default.a.name, _chenfengyuan_vue_countdown__WEBPACK_IMPORTED_MODULE_0___default.a);
 
@@ -17767,7 +17820,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#pattern {\n    width: 100%;\n    background: url('/images/spattern.png');\n    background-repeat: repeat;\n    background-size: 34px 27px;\n}\n.container {\n    margin-top: 50px;\n    display: grid;\n    grid-template-rows: 270px 190px auto;\n    grid-template-areas: \n        \"logo picture\"\n        \"time picture\"\n        \"signup picture\";\n}\n.logo { grid-area: logo;}\n.time { grid-area: time;}\n.signup { grid-area: signup;}\n.picture { grid-area: picture; justify-self: end;}\n.col{\n    color: #b78032;\n    font-size: 35px;\n}\n#root {\n    display: grid;\n    justify-items: center;\n    grid-template-columns: 100px 10px 100px 10px 100px 10px 100px;\n    grid-template-areas: \n        \"day column1 hour column2 minute column3 second\"\n        \"dayl . hourl . minutel . secondl\";\n}\n.day { grid-area: day; font-size: 50px;}\n.hour { grid-area: hour; font-size: 50px;}\n.minute { grid-area: minute; font-size: 50px;}\n.second { grid-area: second; font-size: 50px;}\n.dayl { grid-area: dayl;}\n.hourl { grid-area: hourl;}\n.minutel { grid-area: minutel;}\n.secondl { grid-area: secondl;}\n.link {\n    font-size: 30px;\n    text-decoration: none;\n    color: #b78032;\n    font-weight: bold;\n}\n.link:hover{\n    text-decoration: none;\n    color: #5e4119;\n}\n@media (max-width: 991.98px) {\n.container {\n        margin-top: 50px;\n        display: grid;\n        gap: 15px;\n        grid-template-rows: 120px 100px auto;\n        grid-template-areas: \n            \"logo time\"\n            \"logo signup\"\n            \"logo picture\";\n}\n.logo { grid-area: logo;}\n.time { grid-area: time; width: 40%;}\n.signup { grid-area: signup;}\n.picture {grid-area: picture; width: 40%;  justify-self: start;}\n#root {\n        display: grid;\n        justify-items: center;\n        grid-template-columns: 30px 10px 30px 10px 30px 10px 30px;\n        grid-template-areas: \n            \"day column1 hour column2 minute column3 second\"\n            \"dayl . hourl . minutel . secondl\";\n}\n.day { grid-area: day; font-size: 25px; margin: 0;}\n.hour { grid-area: hour; font-size: 25px; margin: 0;}\n.minute { grid-area: minute; font-size: 25px; margin: 0;}\n.second { grid-area: second; font-size: 25px; margin: 0;}\n.dayl { grid-area: dayl; font-size: 10px; margin: 0;}\n.hourl { grid-area: hourl; font-size: 10px; margin: 0;}\n.minutel { grid-area: minutel; font-size: 10px; margin: 0;}\n.secondl { grid-area: secondl; font-size: 10px; margin: 0;}\n.col{\n        color: #b78032;\n        font-size: 15px;\n        margin: 0;\n}\n.link {\n        font-size: 20px;\n}\n}\n", ""]);
+exports.push([module.i, "\n#pattern {\n    width: 100%;\n    background: url('/images/spattern.png');\n    background-repeat: repeat;\n    background-size: 34px 27px;\n}\n.picture {\n    width: 100%;\n}\n.small {\n    margin-top: 50px;\n    display: none;\n}\n.wide {\n    margin-top: 50px;\n}\n.column{\n    color: #b78032;\n    font-size: 35px;\n}\n#root {\n    display: grid;\n    justify-items: center;\n    grid-template-columns: 100px 10px 100px 10px 100px 10px 100px;\n    grid-template-areas: \n        \"day column1 hour column2 minute column3 second\"\n        \"dayl . hourl . minutel . secondl\";\n}\n.day { grid-area: day; font-size: 50px;}\n.hour { grid-area: hour; font-size: 50px;}\n.minute { grid-area: minute; font-size: 50px;}\n.second { grid-area: second; font-size: 50px;}\n.dayl { grid-area: dayl;}\n.hourl { grid-area: hourl;}\n.minutel { grid-area: minutel;}\n.secondl { grid-area: secondl;}\n.link {\n    font-size: 30px;\n    text-decoration: none;\n    color: #b78032;\n    font-weight: bold;\n}\n.link:hover{\n    text-decoration: none;\n    color: #5e4119;\n}\n@media (max-width: 992px) {\n#root {\n        display: grid;\n        justify-items: center;\n        grid-template-columns: 30px 10px 30px 10px 30px 10px 30px;\n        grid-template-areas: \n            \"day column1 hour column2 minute column3 second\"\n            \"dayl . hourl . minutel . secondl\";\n}\n.day { grid-area: day; font-size: 25px; margin: 0;}\n.hour { grid-area: hour; font-size: 25px; margin: 0;}\n.minute { grid-area: minute; font-size: 25px; margin: 0;}\n.second { grid-area: second; font-size: 25px; margin: 0;}\n.dayl { grid-area: dayl; font-size: 10px; margin: 0;}\n.hourl { grid-area: hourl; font-size: 10px; margin: 0;}\n.minutel { grid-area: minutel; font-size: 10px; margin: 0;}\n.secondl { grid-area: secondl; font-size: 10px; margin: 0;}\n.column{\n        color: #b78032;\n        font-size: 15px;\n        margin: 0;\n}\n.link {\n        font-size: 20px;\n}\n.small {\n        margin-top: 50px;\n        display: block;\n}\n.wide {\n        margin-top: 50px;\n        display: none;\n}\n}\n", ""]);
 
 // exports
 
@@ -49712,84 +49765,193 @@ var render = function() {
   return _c("div", [
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "container" }, [
-      _vm._m(1),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "time" },
-        [
-          _c("h2", [_vm._v("Living Art in New Landscape")]),
-          _vm._v(" "),
-          _c("countdown", {
-            attrs: { time: _vm.time, interval: 100, tag: "p" },
-            scopedSlots: _vm._u([
-              {
-                key: "default",
-                fn: function(props) {
-                  return [
-                    _c("div", { attrs: { id: "root" } }, [
-                      _c("h1", { staticClass: "day" }, [
-                        _vm._v(_vm._s(props.days))
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "col" }, [_vm._v(":")]),
-                      _vm._v(" "),
-                      _c("h1", { staticClass: "hour" }, [
-                        _vm._v(_vm._s(props.hours))
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "col" }, [_vm._v(":")]),
-                      _vm._v(" "),
-                      _c("h1", { staticClass: "minute" }, [
-                        _vm._v(_vm._s(props.minutes))
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "col" }, [_vm._v(":")]),
-                      _vm._v(" "),
-                      _c("h1", { staticClass: "second" }, [
-                        _vm._v(_vm._s(props.seconds))
-                      ]),
-                      _vm._v(" "),
-                      _c("h4", { staticClass: "dayl" }, [_vm._v("dd")]),
-                      _vm._v(" "),
-                      _c("h4", { staticClass: "hourl" }, [_vm._v("hh")]),
-                      _vm._v(" "),
-                      _c("h4", { staticClass: "minutel" }, [_vm._v("mm")]),
-                      _vm._v(" "),
-                      _c("h4", { staticClass: "secondl" }, [_vm._v("ss")])
+    _c("div", { staticClass: "container wide" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row row-cols-1" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col py-5" },
+                [
+                  _c("h2", [_vm._v("Living Art in New Landscape")]),
+                  _vm._v(" "),
+                  _c("countdown", {
+                    attrs: { time: _vm.time, interval: 100, tag: "p" },
+                    scopedSlots: _vm._u([
+                      {
+                        key: "default",
+                        fn: function(props) {
+                          return [
+                            _c("div", { attrs: { id: "root" } }, [
+                              _c("h1", { staticClass: "day" }, [
+                                _vm._v(_vm._s(props.days))
+                              ]),
+                              _vm._v(" "),
+                              _c("p", { staticClass: "column" }, [_vm._v(":")]),
+                              _vm._v(" "),
+                              _c("h1", { staticClass: "hour" }, [
+                                _vm._v(_vm._s(props.hours))
+                              ]),
+                              _vm._v(" "),
+                              _c("p", { staticClass: "column" }, [_vm._v(":")]),
+                              _vm._v(" "),
+                              _c("h1", { staticClass: "minute" }, [
+                                _vm._v(_vm._s(props.minutes))
+                              ]),
+                              _vm._v(" "),
+                              _c("p", { staticClass: "column" }, [_vm._v(":")]),
+                              _vm._v(" "),
+                              _c("h1", { staticClass: "second" }, [
+                                _vm._v(_vm._s(props.seconds))
+                              ]),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "dayl" }, [_vm._v("dd")]),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "hourl" }, [
+                                _vm._v("hh")
+                              ]),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "minutel" }, [
+                                _vm._v("mm")
+                              ]),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "secondl" }, [
+                                _vm._v("ss")
+                              ])
+                            ])
+                          ]
+                        }
+                      }
                     ])
-                  ]
-                }
-              }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "col" }, [
+                _c(
+                  "a",
+                  { staticClass: "link", attrs: { href: "/signmeup" } },
+                  [
+                    _vm._v(
+                      "\n                                SIGN ME UP  \n                                "
+                    ),
+                    _c("font-awesome-icon", { attrs: { icon: "angle-right" } }),
+                    _vm._v(" "),
+                    _c("font-awesome-icon", { attrs: { icon: "angle-right" } }),
+                    _vm._v(" "),
+                    _c("font-awesome-icon", { attrs: { icon: "angle-right" } })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c("p", [_vm._v("To get up-to-date news")])
+              ])
             ])
-          })
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "signup" }, [
-        _c(
-          "a",
-          { staticClass: "link", attrs: { href: "/signmeup" } },
-          [
-            _vm._v("\n                SIGN ME UP  \n                "),
-            _c("font-awesome-icon", { attrs: { icon: "angle-right" } }),
-            _vm._v(" "),
-            _c("font-awesome-icon", { attrs: { icon: "angle-right" } }),
-            _vm._v(" "),
-            _c("font-awesome-icon", { attrs: { icon: "angle-right" } })
-          ],
-          1
-        ),
+          ])
+        ]),
         _vm._v(" "),
-        _c("p", [_vm._v("To get up-to-date news")])
-      ]),
-      _vm._v(" "),
-      _vm._m(2)
+        _vm._m(2)
+      ])
     ]),
     _vm._v(" "),
-    _vm._m(3)
+    _c("div", { staticClass: "container small" }, [
+      _c("div", { staticClass: "row" }, [
+        _vm._m(3),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row row-cols-1" }, [
+              _c(
+                "div",
+                { staticClass: "col" },
+                [
+                  _c("h2", [_vm._v("Living Art in New Landscape")]),
+                  _vm._v(" "),
+                  _c("countdown", {
+                    attrs: { time: _vm.time, interval: 100, tag: "p" },
+                    scopedSlots: _vm._u([
+                      {
+                        key: "default",
+                        fn: function(props) {
+                          return [
+                            _c("div", { attrs: { id: "root" } }, [
+                              _c("h1", { staticClass: "day" }, [
+                                _vm._v(_vm._s(props.days))
+                              ]),
+                              _vm._v(" "),
+                              _c("p", { staticClass: "column" }, [_vm._v(":")]),
+                              _vm._v(" "),
+                              _c("h1", { staticClass: "hour" }, [
+                                _vm._v(_vm._s(props.hours))
+                              ]),
+                              _vm._v(" "),
+                              _c("p", { staticClass: "column" }, [_vm._v(":")]),
+                              _vm._v(" "),
+                              _c("h1", { staticClass: "minute" }, [
+                                _vm._v(_vm._s(props.minutes))
+                              ]),
+                              _vm._v(" "),
+                              _c("p", { staticClass: "column" }, [_vm._v(":")]),
+                              _vm._v(" "),
+                              _c("h1", { staticClass: "second" }, [
+                                _vm._v(_vm._s(props.seconds))
+                              ]),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "dayl" }, [_vm._v("dd")]),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "hourl" }, [
+                                _vm._v("hh")
+                              ]),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "minutel" }, [
+                                _vm._v("mm")
+                              ]),
+                              _vm._v(" "),
+                              _c("h4", { staticClass: "secondl" }, [
+                                _vm._v("ss")
+                              ])
+                            ])
+                          ]
+                        }
+                      }
+                    ])
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "col  py-3" }, [
+                _c(
+                  "a",
+                  { staticClass: "link", attrs: { href: "/signmeup" } },
+                  [
+                    _vm._v(
+                      "\n                                SIGN ME UP  \n                                "
+                    ),
+                    _c("font-awesome-icon", { attrs: { icon: "angle-right" } }),
+                    _vm._v(" "),
+                    _c("font-awesome-icon", { attrs: { icon: "angle-right" } }),
+                    _vm._v(" "),
+                    _c("font-awesome-icon", { attrs: { icon: "angle-right" } })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c("p", [_vm._v("To get up-to-date news")])
+              ]),
+              _vm._v(" "),
+              _vm._m(4)
+            ])
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _vm._m(5)
   ])
 }
 var staticRenderFns = [
@@ -49805,7 +49967,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "logo" }, [
+    return _c("div", { staticClass: "col" }, [
       _c("img", {
         attrs: { src: "/images/logo.png", alt: "Mindanao Art Logo" }
       })
@@ -49815,8 +49977,34 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "picture" }, [
-      _c("img", { attrs: { src: "/images/image1.png", alt: "Image1" } })
+    return _c("div", { staticClass: "col-md" }, [
+      _c("img", {
+        staticClass: "picture",
+        attrs: { src: "/images/image1.png", alt: "Image1" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-3" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("img", {
+          attrs: { src: "/images/logo.png", alt: "Mindanao Art Logo" }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col" }, [
+      _c("img", {
+        staticClass: "picture",
+        attrs: { src: "/images/image1.png", alt: "Image1" }
+      })
     ])
   },
   function() {

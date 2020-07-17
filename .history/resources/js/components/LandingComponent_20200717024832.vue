@@ -3,22 +3,23 @@
         <div id="pattern">
                 <img src="/images/spattern.png" alt="">
         </div>
-        <div class="container wide">
+        <div id="data" class="container">
             <div class="row">
                 <div class="col-md">
                     <div class="container">
-                        <div class="row row-cols-1">
+                        <div class="row">
                             <div class="col">
                                 <img src="/images/logo.png" alt="Mindanao Art Logo">
                             </div>
-                            <div class="col py-5">
+                            <div class="w-100"></div>
+                            <div class="col">
                                 <h2>Living Art in New Landscape</h2>
                                 <countdown :time="time" :interval="100" tag="p">
                                     <template slot-scope="props">
                                         <div id="root">
-                                            <h1 class="day">{{ props.days }}</h1> <p class="column">:</p>
-                                            <h1 class="hour">{{ props.hours }}</h1> <p  class="column">:</p>
-                                            <h1 class="minute">{{ props.minutes }}</h1> <p class="column">:</p>
+                                            <h1 class="day">{{ props.days }}</h1> <p class="col">:</p>
+                                            <h1 class="hour">{{ props.hours }}</h1> <p  class="col">:</p>
+                                            <h1 class="minute">{{ props.minutes }}</h1> <p class="col">:</p>
                                             <h1 class="second">{{ props.seconds }}</h1>
                                             <h4 class="dayl">dd</h4>
                                             <h4 class="hourl">hh</h4>
@@ -28,6 +29,7 @@
                                     </template>
                                 </countdown>
                             </div>
+                            <div class="w-100"></div>
                             <div class="col">
                                 <a class="link" href="/signmeup">
                                     SIGN ME UP  
@@ -41,52 +43,7 @@
                     </div>
                 </div>
                 <div class="col-md">
-                    <img class="picture" src="/images/image1.png" alt="Image1">
-                </div>
-            </div>
-        </div>
-        
-        <div class="container small">
-            <div class="row">
-                <div class="col-3">
-                    <div class="col">
-                        <img src="/images/logo.png" alt="Mindanao Art Logo">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="container">
-                        <div class="row row-cols-1">
-                            <div class="col">
-                                <h2>Living Art in New Landscape</h2>
-                                <countdown :time="time" :interval="100" tag="p">
-                                    <template slot-scope="props">
-                                        <div id="root">
-                                            <h1 class="day">{{ props.days }}</h1> <p class="column">:</p>
-                                            <h1 class="hour">{{ props.hours }}</h1> <p  class="column">:</p>
-                                            <h1 class="minute">{{ props.minutes }}</h1> <p class="column">:</p>
-                                            <h1 class="second">{{ props.seconds }}</h1>
-                                            <h4 class="dayl">dd</h4>
-                                            <h4 class="hourl">hh</h4>
-                                            <h4 class="minutel">mm</h4>
-                                            <h4 class="secondl">ss</h4>
-                                        </div>
-                                    </template>
-                                </countdown>
-                            </div>
-                            <div class="col  py-3">
-                                <a class="link" href="/signmeup">
-                                    SIGN ME UP  
-                                    <font-awesome-icon icon="angle-right" />
-                                    <font-awesome-icon icon="angle-right" />
-                                    <font-awesome-icon icon="angle-right" />
-                                </a>
-                                <p>To get up-to-date news</p>
-                            </div>
-                            <div class="col">
-                                <img class="picture" src="/images/image1.png" alt="Image1">
-                            </div>
-                        </div>
-                    </div>
+                    <img src="/images/image1.png" alt="Image1">
                 </div>
             </div>
         </div>
@@ -141,23 +98,25 @@
         background-size: 34px 27px;
     }
 
-    .picture {
-        width: 100%;
-    }
-
-    .small {
+    /* #data {
         margin-top: 50px;
-        display: none;
+        display: grid;
+        grid-template-rows: 220px 190px auto;
+        grid-template-areas: 
+            "logo picture"
+            "time picture"
+            "signup picture";
     }
 
-    .wide {
-        margin-top: 50px;
-    }
+    .logo { grid-area: logo;}
+    .time { grid-area: time;}
+    .signup { grid-area: signup;}
+    .picture { grid-area: picture; justify-self: end;} */
 
-    .column{
+    /* .col{
         color: #b78032;
         font-size: 35px;
-    }
+    } */
 
     #root {
         display: grid;
@@ -189,7 +148,23 @@
         color: #5e4119;
     }
 
-    @media (max-width: 992px) { 
+    /* @media (max-width: 991.98px) { 
+        #data {
+            margin-top: 50px;
+            display: grid;
+            gap: 15px;
+            grid-template-rows: 120px 100px auto;
+            grid-template-areas: 
+                "logo time"
+                "logo signup"
+                "logo picture";
+        }
+
+        .logo { grid-area: logo;}
+        .time { grid-area: time; width: 40%;}
+        .signup { grid-area: signup;}
+        .picture {grid-area: picture; width: 40%;  justify-self: start;}
+
         #root {
             display: grid;
             justify-items: center;
@@ -208,7 +183,7 @@
         .minutel { grid-area: minutel; font-size: 10px; margin: 0;}
         .secondl { grid-area: secondl; font-size: 10px; margin: 0;}
 
-        .column{
+        .col{
             color: #b78032;
             font-size: 15px;
             margin: 0;
@@ -217,15 +192,5 @@
         .link {
             font-size: 20px;
         }
-
-        .small {
-            margin-top: 50px;
-            display: block;
-        }
-
-        .wide {
-            margin-top: 50px;
-            display: none;
-        }
-    }
+    } */
 </style>

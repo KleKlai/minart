@@ -27,10 +27,10 @@
         }
 
         .container {
-            margin-top: 50px;
             display: grid;
             justify-content: start;
             gap: 30px;
+            
             grid-template-areas: 
                 "left picture";
         }
@@ -155,7 +155,7 @@
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
-                        <input placeholder="Birthday" class="textbox-n" type="text" onfocus="(this.type='date')" id="date" name="birthday">
+                        <input type="date" onfocus=(birthday) name="birthday">
                         <input type="text" placeholder="What are you? (Doctor, Lawyer, etc)" name="proffession">
                         <p>By signing up, you agreed to receive email notification relating to the Mindanao Art Fair.</p>
                         <button type="submit">SUBMIT >>></button>

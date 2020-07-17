@@ -27,10 +27,10 @@
         }
 
         .container {
-            margin-top: 50px;
             display: grid;
             justify-content: start;
             gap: 30px;
+            
             grid-template-areas: 
                 "left picture";
         }

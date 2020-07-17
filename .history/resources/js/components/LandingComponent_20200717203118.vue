@@ -150,11 +150,8 @@
         display: none;
     }
 
-    .wide {
-        margin-top: 50px;
-    }
-
     .column{
+        margin-top: 50px;
         color: #b78032;
         font-size: 35px;
     }

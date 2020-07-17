@@ -146,12 +146,7 @@
     }
 
     .small {
-        margin-top: 50px;
         display: none;
-    }
-
-    .wide {
-        margin-top: 50px;
     }
 
     .column{
@@ -219,12 +214,10 @@
         }
 
         .small {
-            margin-top: 50px;
             display: block;
         }
 
         .wide {
-            margin-top: 50px;
             display: none;
         }
     }

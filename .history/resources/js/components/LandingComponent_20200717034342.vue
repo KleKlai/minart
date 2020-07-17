@@ -46,7 +46,7 @@
             </div>
         </div>
         
-        <div class="container small">
+        <div class="container .d-none .d-sm-block .d-md-none">
             <div class="row">
                 <div class="col-3">
                     <div class="col">
@@ -146,12 +146,7 @@
     }
 
     .small {
-        margin-top: 50px;
         display: none;
-    }
-
-    .wide {
-        margin-top: 50px;
     }
 
     .column{
@@ -219,12 +214,10 @@
         }
 
         .small {
-            margin-top: 50px;
             display: block;
         }
 
         .wide {
-            margin-top: 50px;
             display: none;
         }
     }
