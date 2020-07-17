@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::resource('signmeup', 'SignMeUpController');
 
-// Auth::routes();
+Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 
